@@ -218,13 +218,15 @@ return longestWordsLength;
 
 console.log(findLongestWords(["abc", "werwerew", "adasda"]));
 
-// short 8 -incomplete
+
+
+// short 8
 
 
 var words = ["hello", "what", "is", "up", "dude"];
 
 
-function long1(arr, wordLength) {
+function short8(arr, wordLength) {
 
 var myarray = [];
 
@@ -241,4 +243,4 @@ if (arr[i].length > wordLength) {
 }
 return myarray;
 }
-console.log(long1(["hello", "what", "is", "up", "dude"], 3));
+console.log(short8(["hello", "what", "is", "up", "dude"], 3));
