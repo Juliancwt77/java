@@ -1,10 +1,32 @@
-// long1
+// long1 -incomplete
+// 1. iterate the array given into the function
+// 1.1 create a temp variable to hold the array of lengths.
+// 2. within the loop, find the length of each one
+// 3. return an array of lengths
 
-var words = ["hello", "what", "is", "up", "dude"]
 
-function long1(words) {
-    console.log(long1.length);
-  }
+var words = ["hello", "what", "is", "up", "dude"];
+
+
+
+function long1(arr) {
+
+var myarray = [];
+
+for (var i = 0; i < arr.length; i++) {
+
+  myarray.push(arr[i].length);
+
+}
+return myarray;
+}
+console.log(long1(words));
+
+
+
+
+
+
 
 // long 2
 
@@ -23,15 +45,15 @@ return Math.pow(l,k);
 
   // long3
 
-  function short6(str) {
-      var newString = "";
-      for (var i = str.length - 1; i >= 0; i--) {
-          newString += str[i];
-      }
-      return newString;
-  }
+  function long3(str) {
 
-  console.log(short6('apple'));
+    var arrStrings = str.split(" ").reverse().join(" ");
+    console.log(arrStrings);
+
+}
+
+  long3("i am happy");
+
 
 
 
@@ -71,6 +93,9 @@ console.log(short2(3,2,1));
 // short3
 
 function short3(i) {
+
+// return true if it is a vowel, return false if otherwise
+
   if (i === "a" || i === "e" || i === "i" || i === "o" ||i === "u" ) {
 
         return true;
@@ -81,6 +106,34 @@ function short3(i) {
 }
 
 console.log(short3("b"));
+
+// question 3 alternate answer - wrong answer
+//
+// function isCharacterVowel(str) [
+//   var isVowel = false;
+    // var str = str.toLowerCase(); - change to lower case
+// ]
+//
+// var vowels = [ 'a', 'e', 'i', 'o', 'u'];
+//
+// for ( var i =0; i < vowels.length; i++) {
+//     console.log(vowels[i]);
+//
+//     if (vowels[i] === str ) {
+//         isvowel = true;
+//     } else {
+//
+//         isvowel = false;
+//     }
+// return isVowel;
+//
+//     }
+//
+// console
+
+
+
+
 
 // short4
 function short4muliple(arr) {
@@ -131,15 +184,16 @@ console.log(short6('apple'));
 
 // short7 - not completed
 function short7(arr) {
+
 for(var i = 0; i < arr.length; i++){
 
   return (arr[i].length);
 
-  var j = (arr[i].length);
+
 
 }
 }
 
 console.log(Math.max(arr[i].length));
 
-// short 8
+// short 8 -incomplete
