@@ -183,17 +183,62 @@ function short6(str) {
 console.log(short6('apple'));
 
 // short7 - not completed
-function short7(arr) {
 
-for(var i = 0; i < arr.length; i++){
+// write a function findLongestWords
+// tae an array of words
+// return the length of the longest words
 
-  return (arr[i].length);
+function findLongestWords(arr) {
 
+  var longestWordsLength = 0
 
+//   check which is the longest words from the array
 
+  for(var i = 0; i < arr.length; i++){
+
+//      check what is the arr[i] length
+
+//     console.log(arr[i].length);
+
+    // if yes update
+
+    console.log(arr[i]);
+
+    // check what is the arr[i] length
+    console.log(arr[i].length);
+
+    if ( longestWordsLength < arr[i].length ){
+      longestWordsLength = arr[i].length;
+
+        }
+    }
+return longestWordsLength;
 }
-}
 
-console.log(Math.max(arr[i].length));
+
+console.log(findLongestWords(["abc", "werwerew", "adasda"]));
 
 // short 8 -incomplete
+
+
+var words = ["hello", "what", "is", "up", "dude"];
+
+
+function long1(arr, wordLength) {
+
+var myarray = [];
+
+
+for (var i = 0; i < arr.length; i++) {
+
+
+
+if (arr[i].length > wordLength) {
+
+  myarray.push(arr[i]);
+
+}
+}
+return myarray;
+}
+console.log(long1(["hello", "what", "is", "up", "dude"], 3));
